@@ -80,7 +80,7 @@ h2 {
 }
 
 .navbar-status {
-  padding-left: 4px;
+  padding-left: 2px;
 }
 
 .row {
@@ -123,6 +123,16 @@ h2 {
   padding-bottom: 48px;
 }
 
-.align-self-start {
-  margin-top: 24px;
+li {
+  list-style: none;
+}
+
+span {
+  font-size: 14px;
+  color: #A7ABAE;
+}
+
+.pfp {
+  border-radius: 20px;
+  margin-right: 12px;
 }
