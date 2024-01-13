@@ -46,19 +46,19 @@
           <p class="label-chip"> VISUAL </p>
           <p class="label-chip"> PRODUCT & BRAND </p>
         </div>
-        <h1> Kaeley Lenard, <br /> UX Designer </h1>
+        <h1 class="intro-name"> Kaeley Lenard, <br /> UX Designer </h1>
         <div class="intro-subcopy">
           <p>🌿 a.k.a. Kale</p>
           <p>📍 Remote - San Francisco Bay Area, CA</p>
           <p>📍 Remote - Orange County, CA</p>
         </div>
-        <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank">
-          <button><img src="assets/head/linkedin.svg">&nbsp;
+        <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank" class="intro-button">
+          <button><img src="assets/head/linkedin.svg" alt="LinkedIn">&nbsp;
           Message me on LinkedIn</button>
         </a>
       </div>
       <div class="intro-image col-sm-4">
-        <object data="assets/head/KALE.svg" width="75%" height="75%"> </object>
+        <object data="assets/head/KALE.svg" width="75%" height="75%" alt="Vector illustration of a kale leaf"> </object>
       </div>
     </div>
   </div>
@@ -67,9 +67,9 @@
   <div class="container with-margin-standard">
     <div class="row">
       <div class="col-sm">
-        <a href="https://www.mercari.com/" target="_blank"><object class="corporate" data="assets/corporate/mercari.svg" height="32px"> </object></a>
-        <a href="https://www.aetnacvshealth.com/" target="_blank"><object class="corporate" data="assets/corporate/cvs.svg" height="32px"> </object></a>
-        <a href="https://www.informatics.uci.edu/" target="_blank"><object class="corporate" data="assets/corporate/uci.svg" height="32px"> </object></a>
+        <a href="https://www.mercari.com/" target="_blank"><object class="corporate" data="assets/corporate/mercari.svg" height="32px" alt="Mercari"> </object></a>
+        <a href="https://www.aetnacvshealth.com/" target="_blank"><object class="corporate" data="assets/corporate/cvs.svg" height="32px" alt="CVS Health Aetna"> </object></a>
+        <a href="https://www.informatics.uci.edu/" target="_blank"><object class="corporate" data="assets/corporate/uci.svg" height="32px" alt="UC Irvine Department of Informatics"> </object></a>
       </div>
     </div>
   </div>
@@ -82,15 +82,15 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-4 align-self-start">
-            <object data="assets/principles/principle-1.svg"> </object>
+            <object data="assets/principles/principle-1.svg" alt="Vector illustration of a broom sweeping a MacOS window"> </object>
             <p> Prioritize digital organization like physical organization. </p>
           </div>
           <div class="col-sm-4 align-self-start">
-            <object data="assets/principles/principle-2.svg"> </object>
+            <object data="assets/principles/principle-2.svg" alt="Vector illustration of a puzzle piece placing itself in the correct position"> </object>
             <p> Reduce verbose instructions and encourage learning by doing. </p>
           </div>
           <div class="col-sm-4 align-self-start">
-            <object data="assets/principles/principle-3.svg"> </object>
+            <object data="assets/principles/principle-3.svg" alt="Vector illustration of a smiling pink two-tiered cake"> </object>
             <p> Celebrate with the user. </p>
           </div>
         </div>
@@ -117,10 +117,10 @@
         <li> Git </li>
         <li> Jira </li>
       </div>
-      <div class="col-sm-2 align-self-start">
+      <div class="col-sm-3 align-self-start">
         <h2> Education </h2>
       </div>
-      <div class="col-sm-4 align-self-start with-margin-compact">
+      <div class="col-sm-3 align-self-start with-margin-compact">
         <li> UC Irvine </li>
         <li> B.S. Informatics </li>
         <li> Minor in Entrepreneurship </li>
@@ -128,19 +128,29 @@
     </div>
   </div>
 
-  <br /><br /><br />
 
+  <!-- Portfolio -->
+  <div class="container principles with-margin-standard">
+    <h2> Portfolio </h2>
+    <br />
+    Currently renovating 🏗 <br /> <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank" class="subtle-link">Message me</a> for work inquiries.
+  </div>
+
+
+  <br /><br />
+
+
+  <!-- Footer -->
   <div class="container footer with-margin-standard">
-    <!-- <p> Made with 🥬 <br /> ©2024 Kaeley Lenard </p>   -->
     <span style="float: left;">
-      <img src="assets/footer/pfp.jpg" height="42px" class="pfp">
+      <img src="assets/footer/pfp.jpg" height="42px" class="pfp" alt="Avatar of Kaeley in Big Sur, CA">
     </span>
     <span style="float: left;">
       Made with 🥬  <br /> ©2024 Kaeley Lenard
     </span>
     <span style="float: right;">
-      <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank"><img src="assets/footer/linkedin.png" width="32px" height="32px"></a>
-      <a href="https://www.dribbble.com/kaeley" target="_blank"><img src="assets/footer/dribbble.png" width="32px" height="32px"></a>
+      <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank"><img src="assets/footer/linkedin.png" width="32px" height="32px" alt="LinkedIn"></a>
+      <a href="https://www.dribbble.com/kaeley" target="_blank"><img src="assets/footer/dribbble.png" width="32px" height="32px" alt="Dribbble"></a>
     </span>
   </div>
 
@@ -148,10 +158,12 @@
 
 
 
-  <!-- Scroll reveal -->
-  <!-- <script>
-    ScrollReveal().reveal('.container', { delay: 200 })
-  </script> -->
+  <script>
+    ScrollReveal().reveal('.label-chip', { delay: 400 })
+    ScrollReveal().reveal('.intro-name', { delay: 600 })
+    ScrollReveal().reveal('.intro-subcopy', { delay: 800 })
+    ScrollReveal().reveal('.intro-button', { delay: 1000 })
+  </script>
 
 </body>
 </html>
