@@ -42,6 +42,7 @@ a {
   font-weight: 400;
   font-size: 18pt;
   color: #222222;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -56,6 +57,10 @@ button {
   color: white;
   font-size: 18px;
   margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 12px 0px rgba(34, 34, 34, 0.2);
 }
 
 h1 {
@@ -104,24 +109,9 @@ h2 {
   text-align: left;
 }
 
-.corporate-first {
-  margin-bottom: 12px;
-  margin-right: 20px;
-  opacity: 0.5;
-  margin-top: 12px;
-}
-
-/* Remove margins for first object on smaller screens */
-@media (max-width: 575px) {
-  [class*="corporate-first"] {
-      margin-left: 0px;
-      margin-right: 0px;
-  }
-}
-
 .corporate {
   margin-bottom: 12px;
-  margin-left: 20px;
+  margin-left: 16px;
   margin-right: 20px;
   opacity: 0.5;
   margin-top: 12px;
@@ -153,8 +143,8 @@ span {
   margin-right: 12px;
 }
 
-.col-sm-4 .align-self-start {
-  margin-top: 24px;
+#responsive-row-spacing {
+  margin-bottom: 12px;
 }
 
 a.subtle-link {
@@ -162,4 +152,9 @@ a.subtle-link {
   font-weight: 700;
   color: #4C956C;
   text-decoration: none;
+}
+
+.footer {
+  overflow: hidden;
+  margin-bottom: 24px;
 }
