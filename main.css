@@ -1,6 +1,6 @@
 * {
   font-family: 'Nunito', sans-serif;
-  color: #222222;
+  color: #292929;
 }
 
 /* Center align content on narrow screens */
@@ -63,6 +63,41 @@ button {
   box-shadow: 0px 2px 12px 0px rgba(34, 34, 34, 0.2);
 }
 
+button.secondary {
+  padding: 8px;
+  font-size: 18px;
+  display: inline;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+button:active {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+button.disabled:hover {
+  opacity: 0.4;
+}
+
+.icon:hover {
+  opacity: 80%;
+}
+
 h1 {
   font-size: 3em;
   font-weight: 700;
@@ -72,6 +107,11 @@ h2 {
   font-size: 1.5em;
   font-weight: 700;
   text-align: center;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 700;
 }
 
 .navbar {
@@ -98,7 +138,7 @@ h2 {
   padding: 8px 16px 8px 16px;
   font-size: 14px;
   border-radius: 0px 16px 0px 16px;
-  background-color: #F0EAD2;
+  background-color: #E3D7A8;
   margin-right: 12px;
 }
 
@@ -126,7 +166,9 @@ h2 {
   background-color: #FBFBFB;
   border-radius: 16px;
   padding-top: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 32px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 li {
@@ -145,6 +187,22 @@ span {
 
 #responsive-row-spacing {
   margin-bottom: 12px;
+}
+
+#responsive-card-spacing {
+  margin-bottom: 48px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 2px 12px 0px rgba(34, 34, 34, 0.05);
+}
+
+.card-footer {
+  background: white;
+  border: none;
+  margin-top: -32px;
+  padding-bottom: 32px;
 }
 
 a.subtle-link {
