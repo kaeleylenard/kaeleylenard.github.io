@@ -17,6 +17,8 @@
   <link rel="icon" href="assets/head/kale-tab.png">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal@4"></script>
   <script>
@@ -30,7 +32,7 @@
   <nav class="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand">
           Kaeley Lenard <object class="navbar-status" data="assets/head/navbar-status.svg"> </object>
         </a>
       </div>
@@ -49,15 +51,12 @@
         <h1 class="intro-name"> Kaeley Lenard, <br /> UX Designer </h1>
         <div class="intro-subcopy">
           <p>🌿 aka Kale</p>
+          <p>🎓 UCI Informatics grad</p>
           <p>📍 Orange County + San Francisco Bay Area</p>
-          <p>🎓 UCI Informatics Alum</p>
+          <p>🏆 Championing a keep-it-simple mindset across disciplines </p>
         </div>
-        <!-- <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank" class="intro-button">
-          <button><img src="assets/head/linkedin.svg" alt="LinkedIn">&nbsp;
-          Message me</button>
-        </a> -->
         <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank" class="intro-button">
-          <button>Message me on LinkedIn</button>
+          <button><i class="fa-brands fa-linkedin fa-lg"></i> Connect on LinkedIn </button>
         </a>
       </div>
       <div class="intro-image col-sm-4">
@@ -84,17 +83,17 @@
     <div class="row">
       <div class="container">
         <div class="row">
-          <div class="col-sm-4 align-self-start" id="responsive-row-spacing">
+          <div class="col-sm-4 align-self-start broom" id="responsive-row-spacing">
             <object data="assets/principles/principle-1.svg" alt="Vector illustration of a broom sweeping a MacOS window"> </object>
             <p> Prioritize digital organization like a physical space. </p>
           </div>
-          <div class="col-sm-4 align-self-start" id="responsive-row-spacing">
+          <div class="col-sm-4 align-self-start puzzle" id="responsive-row-spacing">
             <object data="assets/principles/principle-2.svg" alt="Vector illustration of a puzzle piece placing itself in the correct position"> </object>
             <p> Reduce verbose instructions to encourage learning by doing. </p>
           </div>
-          <div class="col-sm-4 align-self-start">
+          <div class="col-sm-4 align-self-start cake">
             <object data="assets/principles/principle-3.svg" alt="Vector illustration of a smiling pink two-tiered cake"> </object>
-            <p> Celebrate with the user. </p>
+            <p> Celebrate with the user as they accomplish their hero's journey. </p>
           </div>
         </div>
       </div>
@@ -186,8 +185,8 @@
         <div class="card-body">
           <h3 class="card-title">Source File Revamp</h5>
           <p class="card-text">Spearheaded an operations initiative to
-            address team understanding, update frequency, content organization, and
-            contribution expectations of a shared reference document.</p>
+            address shared team understanding, update frequency, content organization, and
+            contribution expectations.</p>
             <p style="font-weight: 700;"> -75% allocated time for biannual document updating. </p>
         </div>
         <div class="card-footer">
@@ -211,8 +210,9 @@
       Made with 🥬  <br /> ©2024 Kaeley Lenard
     </span>
     <span style="float: right;">
-      <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank" class="icon"><img src="assets/footer/linkedin.png" width="32px" height="32px" alt="LinkedIn"></a>
-      <a href="https://www.dribbble.com/kaeley" target="_blank" class="icon"><img src="assets/footer/dribbble.png" width="32px" height="32px" alt="Dribbble"></a>
+      <a href="https://www.dribbble.com/kaeley" target="_blank"><i class="standalone-icon fa-brands fa-dribbble fa-lg"></i></a>
+      <a href="https://github.com/kaeleylenard" target="_blank"><i class="standalone-icon fa-brands fa-github-alt fa-lg"></i></a>
+      <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank"><i class="standalone-icon fa-brands fa-linkedin fa-lg"></i></a>
     </span>
   </div>
 
@@ -225,6 +225,10 @@
     ScrollReveal().reveal('.intro-name', { delay: 600 })
     ScrollReveal().reveal('.intro-subcopy', { delay: 800 })
     ScrollReveal().reveal('.intro-button', { delay: 1000 })
+
+    ScrollReveal().reveal('.broom', { delay: 400 })
+    ScrollReveal().reveal('.puzzle', { delay: 800 })
+    ScrollReveal().reveal('.cake', { delay: 1200 })
   </script>
 
 </body>
