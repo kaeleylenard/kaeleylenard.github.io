@@ -155,6 +155,12 @@ span {
   opacity: 1.0;
 }
 
+.emoji-bullet {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .footer {
   overflow: hidden;
   margin-bottom: 24px;
@@ -163,7 +169,7 @@ span {
 .intro-subcopy {
   margin-top: 24px;
   margin-bottom: 24px;
-  line-height: 16px;
+  line-height: 20px;
   text-align: left;
 }
 
