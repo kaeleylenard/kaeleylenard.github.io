@@ -127,6 +127,10 @@ span {
   color: gray;
 }
 
+p.work-page {
+  line-height: 24px;
+}
+
 .card {
   border: none;
   box-shadow: 0px 2px 12px 0px rgba(34, 34, 34, 0.05);
@@ -141,6 +145,10 @@ span {
 
 #responsive-card-spacing {
   margin-bottom: 48px;
+}
+
+.child {
+  display: inline-block;
 }
 
 .corporate {
@@ -164,6 +172,17 @@ span {
 .footer {
   overflow: hidden;
   margin-bottom: 24px;
+}
+
+.inline-link {
+  font-weight: 700;
+  font-size: 18px;
+  color: #4C956C;
+}
+
+.inline-link:hover {
+  color: #4C956C;
+  text-decoration: underline !important;
 }
 
 .intro-subcopy {
@@ -222,8 +241,4 @@ span {
 
 .standalone-icon:hover {
   opacity: 50%;
-}
-
-.child {
-  display: inline-block;
 }
