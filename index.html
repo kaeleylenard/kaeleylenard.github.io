@@ -28,6 +28,9 @@
   <script>
     ScrollReveal({ duration: 1000 })
   </script>
+
+  <!-- Accessibilty: hidden link to allow skipping -->
+  <a href="#work" class="skip">Skip to work portfolio</a>
 </head>
 
 
@@ -47,7 +50,7 @@
   <!-- Intro -->
   <div class="container with-margin-compact">
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-8" role="">
         <div class="chips">
           <p class="label-chip"> 🔁 INTERACTION </p>
           <p class="label-chip"> 🎨 VISUAL </p>
@@ -61,7 +64,7 @@
           boosting satisfaction, and piloting innovation for <b>your</b> product.</p>
         </div>
         <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank" class="intro-button">
-          <button><i class="fa-brands fa-linkedin fa-lg"></i> Connect on LinkedIn </button>
+          <button aria-label: "Kaeley Lenard's LinkedIn (opens in new tab)"><i class="fa-brands fa-linkedin fa-lg" role="presentation"></i> Connect on LinkedIn </button>
         </a>
       </div>
       <div class="intro-image col-sm-4">
@@ -74,70 +77,16 @@
   <div class="container with-margin-standard">
     <div class="row">
       <div class="col-sm">
-        <a href="https://www.mercari.com/" target="_blank"><object class="corporate" data="assets/corporate/mercari.svg" height="32px" alt="Mercari"> </object></a>
-        <a href="https://www.aetnacvshealth.com/" target="_blank"><object class="corporate" data="assets/corporate/cvs.svg" height="32px" alt="CVS Health Aetna"> </object></a>
-        <a href="https://www.informatics.uci.edu/" target="_blank"><object class="corporate" data="assets/corporate/uci.svg" height="32px" alt="UC Irvine Department of Informatics"> </object></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Design Principles -->
-  <div class="container principles with-margin-standard">
-    <h2> Design Principles </h2>
-    <br />
-    <div class="row">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 align-self-start broom" id="responsive-row-spacing">
-            <object data="assets/principles/principle-1.svg" alt="Vector illustration of a broom sweeping a MacOS window"> </object>
-            <p> Prioritize digital organization like a physical space. </p>
-          </div>
-          <div class="col-sm-4 align-self-start puzzle" id="responsive-row-spacing">
-            <object data="assets/principles/principle-2.svg" alt="Vector illustration of a puzzle piece placing itself in the correct position"> </object>
-            <p> Reduce verbose instructions to encourage learning by doing. </p>
-          </div>
-          <div class="col-sm-4 align-self-start cake">
-            <object data="assets/principles/principle-3.svg" alt="Vector illustration of a smiling pink two-tiered cake"> </object>
-            <p> Celebrate with the user as they accomplish their hero's journey. </p>
-          </div>
-        </div>
+        <a href="https://www.mercari.com/" target="_blank"><object class="corporate" data="assets/corporate/mercari.svg" height="32px" aria-label="Mercari homepage (opens in new tab)"> </object></a>
+        <a href="https://www.aetnacvshealth.com/" target="_blank"><object class="corporate" data="assets/corporate/cvs.svg" height="32px" aria-label="CVS Health Aetna homepage (opens in new tab)"> </object></a>
+        <a href="https://www.informatics.uci.edu/" target="_blank"><object class="corporate" data="assets/corporate/uci.svg" height="32px" aria-label="UC Irvine Department of Informatics homepage (opens in new tab)"> </object></a>
       </div>
     </div>
   </div>
 
 
-  <!-- Toolkit and Education -->
-  <div class="container with-margin-standard">
-    <div class="row">
-      <div class="col-sm-2 align-self-start">
-        <h2> Toolkit </h2>
-      </div>
-      <div class="col-sm-2 align-self-start">
-        <li> Figma + FigJam </li>
-        <li> Adobe Creative Cloud </li>
-        <li> Miro </li>
-        <li> Sketch </li>
-        <li> UserTesting </li>
-      </div>
-      <div class="col-sm-2 align-self-start with-margin-compact">
-        <li> HTML - CSS - JS </li>
-        <li> Git </li>
-        <li> Jira </li>
-      </div>
-      <div class="col-sm-3 align-self-start">
-        <h2> Education </h2>
-      </div>
-      <div class="col-sm-3 align-self-start with-margin-compact">
-        <li> UC Irvine </li>
-        <li> B.S. Informatics </li>
-        <li> Minor in Entrepreneurship </li>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Portfolio -->
-  <div class="container principles with-margin-standard">
+  <!-- Work Portfolio -->
+  <div class="container principles with-margin-standard" id="work">
     <h2> Featured Work at Mercari </h2>
     <br />
 
@@ -209,10 +158,69 @@
     </div>
 
     <p style="font-size: 18px"> Also check out my visual work on
-      <a class="inline-link" href="https://www.dribbble.com/kaeley" target="_blank">Dribbble</a> ➡️ </p>
-
+      <a class="inline-link" href="https://www.dribbble.com/kaeley" target="_blank" aria-label="Kaeley Lenard's Dribbble (opens in new tab)">Dribbble</a> ➡️ </p>
   </div>
-  <br />
+
+
+  <!-- Toolkit and Education -->
+  <div class="container with-margin-standard">
+    <div class="row">
+      <div class="col-sm-2 align-self-start">
+        <h2> Toolkit </h2>
+      </div>
+      <div class="col-sm-2 align-self-start">
+        <ul>
+          <li> Figma + FigJam </li>
+          <li> Adobe Creative Cloud </li>
+          <li> Miro </li>
+          <li> Sketch </li>
+          <li> UserTesting </li>
+        </ul>
+      </div>
+      <div class="col-sm-2 align-self-start with-margin-compact">
+        <ul>
+          <li> HTML - CSS - JS </li>
+          <li> Git </li>
+          <li> Jira </li>
+        </ul>
+      </div>
+      <div class="col-sm-3 align-self-start">
+        <h2> Education </h2>
+      </div>
+      <div class="col-sm-3 align-self-start with-margin-compact">
+        <ul>
+          <li> UC Irvine </li>
+          <li> B.S. Informatics </li>
+          <li> Minor in Entrepreneurship </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Design Principles -->
+  <div class="container principles with-margin-standard">
+    <h2> Design Principles </h2>
+    <br />
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 align-self-start broom" id="responsive-row-spacing">
+            <object data="assets/principles/principle-1.svg" alt="Vector illustration of a broom sweeping a MacOS window"> </object>
+            <p> Prioritize digital organization like a physical space. </p>
+          </div>
+          <div class="col-sm-4 align-self-start puzzle" id="responsive-row-spacing">
+            <object data="assets/principles/principle-2.svg" alt="Vector illustration of a puzzle piece placing itself in the correct position"> </object>
+            <p> Reduce verbose instructions to encourage learning by doing. </p>
+          </div>
+          <div class="col-sm-4 align-self-start cake">
+            <object data="assets/principles/principle-3.svg" alt="Vector illustration of a smiling pink two-tiered cake"> </object>
+            <p> Celebrate with the user as they accomplish their hero's journey. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Testimonials -->
@@ -334,9 +342,9 @@
       Made with 🥬  <br /> ©2024 Kaeley Lenard
     </span>
     <span style="float: right;">
-      <a href="https://www.dribbble.com/kaeley" target="_blank"><i class="standalone-icon fa-brands fa-dribbble fa-lg"></i></a>
-      <a href="https://github.com/kaeleylenard" target="_blank"><i class="standalone-icon fa-brands fa-github-alt fa-lg"></i></a>
-      <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank"><i class="standalone-icon fa-brands fa-linkedin fa-lg"></i></a>
+      <a href="https://www.dribbble.com/kaeley" target="_blank" aria-label: "Kaeley Lenard's Dribbble (opens in new tab)"><i class="standalone-icon fa-brands fa-dribbble fa-lg" role="presentation"></i></a>
+      <a href="https://github.com/kaeleylenard" target="_blank" aria-label: "Kaeley Lenard's Github (opens in new tab)"><i class="standalone-icon fa-brands fa-github-alt fa-lg" role="presentation"></i></a>
+      <a href="https://www.linkedin.com/in/kaeleylenard" target="_blank" aria-label: "Kaeley Lenard's LinkedIn (opens in new tab)"><i class="standalone-icon fa-brands fa-linkedin fa-lg" role="presentation"></i></a>
     </span>
   </div>
 
