@@ -84,10 +84,6 @@ button:active {
   outline: none;
 }
 
-button:hover {
-  opacity: 80%;
-}
-
 button.disabled {
   opacity: 0.4;
   cursor: not-allowed;
@@ -95,6 +91,10 @@ button.disabled {
 
 button:focus {
   outline: none;
+}
+
+button:hover {
+  opacity: 80%;
 }
 
 h1 {
@@ -136,11 +136,25 @@ p.work-page {
   box-shadow: 0px 2px 12px 0px rgba(34, 34, 34, 0.05);
 }
 
+.card.testimonial {
+  margin-bottom: 8px !important;
+}
+
+.card-deck.testimonial {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: .5rem;
+}
+
 .card-footer {
   background: white;
   border: none;
   margin-top: -32px;
   padding-bottom: 32px;
+}
+
+.card-footer.testimonial {
+  margin-top: 0px;
 }
 
 #responsive-card-spacing {
@@ -241,4 +255,9 @@ p.work-page {
 
 .standalone-icon:hover {
   opacity: 50%;
+}
+
+.testimonial {
+  background: #f2f2f2;
+  box-shadow: none;
 }
