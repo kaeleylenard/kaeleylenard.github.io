@@ -8,6 +8,10 @@
   [class*="col-"] {
       text-align: center;
   }
+  button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Wide screens */
@@ -33,7 +37,7 @@
 }
 
 html, body {
-  background-color: #f2f2f2;
+  background-color: #faf8f3;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -64,7 +68,6 @@ button {
   color: white;
   font-size: 18px;
   margin-bottom: 32px;
-  display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 2px 12px 0px rgba(34, 34, 34, 0.2);
@@ -122,12 +125,6 @@ li {
   list-style: none;
 }
 
-mark {
-  display: inline-block;
-  line-height: 0em;
-  padding-bottom: 0.5em;
-  background: #f5cac3;
-}
 
 span {
   font-size: 14px;
@@ -135,7 +132,7 @@ span {
 }
 
 p.work-page {
-  line-height: 24px;
+  line-height: 28px;
 }
 
 .card {
@@ -210,7 +207,6 @@ p.work-page {
   margin-top: 24px;
   margin-bottom: 24px;
   line-height: 20px;
-  text-align: left;
 }
 
 .label-chip {
@@ -224,8 +220,7 @@ p.work-page {
 
 .navbar {
   font-weight: 400;
-  border-bottom: 1px solid #D5D5D5;
-  background-color: #f2f2f2;
+  background-color: #faf8f3;
   padding-top: 20px;
   margin-bottom: 48px;
   text-align: center;
@@ -239,7 +234,7 @@ p.work-page {
 
 .principles {
   text-align: center;
-  background-color: #FBFBFB;
+  background-color: #FFFFFF;
   border-radius: 16px;
   padding-top: 48px;
   padding-bottom: 32px;
@@ -274,6 +269,6 @@ p.work-page {
 }
 
 .testimonial {
-  background: #f2f2f2;
+  background: #FFFFFF;
   box-shadow: none;
 }
